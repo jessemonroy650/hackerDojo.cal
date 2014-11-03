@@ -4,7 +4,7 @@
 		var htmlItem = document.getElementById('workspace2');
                 valueId = 'itemIdName_' + formItemIndex;
                 //xxx = valueId + ":" + value; 
-		divNode2(calenderSpace, valueId, label, css_class1, value, css_class2);
+		divNode2(htmlItem, valueId, label, css_class1, value, css_class2);
 		//htmlItem.appendChild(document.createElement('br'));
 		formItemIndex++;
 	}
@@ -21,7 +21,7 @@
 	}
 	function addASpacer() {
 		var htmlItem = document.getElementById('workspace2');
-		calenderSpace.appendChild(document.createElement('p'));
+		htmlItem.appendChild(document.createElement('p'));
 	}
 
 	//
