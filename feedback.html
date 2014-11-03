@@ -1,0 +1,82 @@
+<!doctype html>
+<HTML>
+<HEAD>
+<TITLE>Dojo Cal</TITLE>
+<!-- Resource Information -->
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=ISO-8859-1">
+<META NAME="resource-type"      CONTENT="document">
+<meta name="viewport" content="width=device-width">
+<STYLE>
+body {margin:0;padding:0;}
+a {text-decoration:none;color:#000000;}
+.topSpacer {background:#b22222;}
+.bannerName {color:#b22222;font-size:1em;font-weight:bold;}
+ul.menu {margin:0;padding:0;background-color:#b24444;color:#000000;list-style-type:none;width:100%;float:left;}
+li.menu-item {margin:5px;padding:10px;background-color:#f5deb3;color:#000000;float:left;}
+
+.label {width:100%;color:black;
+background:#f5deb3;
+}
+.value {width:100%;color:black;
+border:solid 0.1em black;
+background:#fafad2;text-align:left;
+font-weight: bold;
+}
+
+.labell {width:25%;color:black;padding:5px;background:#e0eee0;
+float:left;
+}
+.valuer {width:100%;color:black;padding:5px;
+border:solid 1px black;
+background:white;text-align:left;
+}
+
+.statusMessage {width:100%;color:black;padding:0.2em;
+font-weight:bold;
+}
+.calenderSpace {width:100%;color:black;padding:0.2em;
+}
+
+</STYLE>
+</HEAD>
+<BODY >
+<img style=float:left; src=images/dojocal_icon.png>
+<CENTER>
+<div class=topSpacer>&nbsp;</div>
+<ul class=menu>
+<li class=menu-item><a href=index.html>Home</a></li>
+<li class=menu-item><a href=about.html>About</a></li>
+<li class=menu-item><a href=feedback.html>Feedback</a></li>
+<li class=menu-item><span onclick='navigator.app.exitApp()'>Exit</span></li>
+</ul>
+
+<div>
+<span class=bannerName>A Calender App for HackerDojo</span>
+</div>
+
+<br style=clear:both;>
+<div class=statusMessage name=workspace id=workspace>Feedback</div>
+<div class=calenderSpace id=workspace2>
+<div class=feedbackbox >
+<form  method=post action="http://www.bsdmasterindex.com/contact/dojocal-feedback.php">
+Name <br>
+<input name=name type=text size=20><br>
+Email  <br>
+<input name=email type=text size=20><br>
+Feedback: <br>
+<textarea cols=30 rows=6 name=feedback></textarea> <br>
+<input type=submit value="Send feedback">
+</form>
+&nbsp;
+</div>
+</div>
+
+<P>
+
+<div style="background:lightblue;">
+Created by<br> jesse at <br>bsdmasterindex.com &#169 2013
+</div>
+</CENTER>
+
+</BODY>
+</HTML>

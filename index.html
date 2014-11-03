@@ -1,0 +1,79 @@
+<!doctype html>
+<HTML>
+  <HEAD>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<TITLE>Dojo Cal</TITLE>
+	<!-- Resource Information -->
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href=hdcal.css>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+    <SCRIPT type="text/javascript" SRC="js/basicGUIWidgets.js"></SCRIPT>
+    <SCRIPT type="text/javascript" SRC="js/basicDateFunctions.js"></SCRIPT>
+    <SCRIPT type="text/javascript" SRC="js/newGUIWidgets.js"></SCRIPT>
+    <SCRIPT type="text/javascript" SRC="js/ajaxLite.js"></SCRIPT>
+    <SCRIPT type="text/javascript" SRC="app.js"></SCRIPT>
+    <SCRIPT type="text/javascript">
+	var preloadDelayTime  = 800; // in milliseconds
+    var postLoadDelayTime = 200;
+    var workSpace  = {};
+    var calenderSpace = {};
+    var formItemIndex = 0;
+    var css_class1 = 'label';
+    var css_class2 = 'value';
+    var css_class3 = 'labell';
+    var css_class4 = 'valuer';
+    var stuff = '{"listOfStuff" : [' +
+		'{"label":"This is the Label.", "value":"The Value."},' +
+		'{"label":"This is the Label #2.", "value":"The Value #2."},' +
+		']}';
+  	var obj = {}; //= eval ("(" + stuff + ")"); 
+
+	myurl = encodeURI("http://www.contractorsthriftstore.com/test/events.json");
+	myurl = encodeURI("http://events.hackerdojo.com/events.json");
+
+	function initApp() {
+		// Grab the object handles for our rendering/drawing spaces
+		workSpace     = $("#workspace");
+		calenderSpace = document.getElementById("workspace2");
+		// delay fetching our data
+		window.setTimeout(delayLoading, preloadDelayTime);
+		workSpace.text("0 events.");
+	}
+    </SCRIPT>
+  </HEAD>
+<BODY onload="initApp();">
+<img style=float:left; src=images/dojocal_icon.png>
+<CENTER>
+<div class=topSpacer>&nbsp;</div>
+<ul class=menu>
+<li class=menu-item><a href=index.html>Home</a></li>
+<li class=menu-item><a href=about.html>About</a></li>
+<li class=menu-item><a href=feedback.html>Feedback</a></li>
+<li class=menu-item><span onclick='navigator.app.exitApp()'>Exit</span></li>
+</ul>
+
+<div>
+<span class=bannerName>A Calender App for HackerDojo</span>
+</div>
+
+<br style=clear:both;>
+<div class=statusMessage name=workspace id=workspace></div>
+<div class=statusMessage name=debugspace id=debugspace></div>
+<div class=calenderSpace id=workspace2></div>
+
+<P>
+
+<div id=loadButton>
+<input type=submit value="Loading. Please Wait."
+ onClick="dummyLoader(); return false;">
+</div>
+
+<div style="background:lightblue;">
+Created by<br> jesse at <br>bsdmasterindex.com &#169 2013
+</div>
+</CENTER>
+
+</BODY>
+</HTML>
