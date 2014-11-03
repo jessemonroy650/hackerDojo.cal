@@ -2,33 +2,62 @@ body {margin:0;padding:0;}
 a {text-decoration:none;color:#000000;}
 .topSpacer {background:#b22222;}
 .bannerName {color:#b22222;font-size:1em;font-weight:bold;}
-ul.menu {margin:0;padding:0;background-color:#b24444;color:#000000;list-style-type:none;width:100%;float:left;
--webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
-li.menu-item {margin:5px;padding:10px;background-color:#f5deb3;color:#000000;float:left;
+
+ul.menu {
+margin:0;
+padding:0;
+background-color:#b24444;
+color:#000000;
+list-style-type:none;
+width:100%;
+float:left;
 -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 
-.label {width:100%;color:black;
+li.menu-item {
+margin:5px;
+padding:10px;
+background-color:#f5deb3;
+color:#000000;
+float:left;
+-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+
+.label {width:100%;
+color:black;
 background:#f5deb3;
 -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
 }
-.value {width:100%;color:black;
+.value {width:100%;
+color:black;
 border:solid 0.1em black;
 background:#fafad2;text-align:left;
 font-weight: bold;
 -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
 }
 
-.labell {width:25%;color:black;padding:5px;background:#e0eee0;
+.labell {width:25%;
+color:black;
+padding:0.2em;
+background:#e0eee0;
 float:left;
 -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
 }
-.valuer {width:100%;color:black;padding:5px;
+.valuer {width:100%;
+color:black;
+padding:0.2em;
 border:solid 1px black;
-background:white;text-align:left;
+background:white;
+text-align:left;
 -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
 }
 
-.statusMessage {width:100%;color:black;padding:0.2em;
-font-weight:bold;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
-.calenderSpace {width:100%;color:black;padding:0.2em;
+.statusMessage {width:100%;
+color:black;
+padding:0.2em;
+font-weight:bold;
 -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+
+.calenderSpace {width:100%;
+color:black;
+padding:0.2em;
+-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+

@@ -1,4 +1,6 @@
-
+	//
+	//	Could not use jquery because jquery has it's own object types
+	//
 	function addMoreFriends(label,value) {
 		var htmlItem = document.getElementById('workspace2');
         valueId = 'itemIdName_' + formItemIndex;
@@ -18,11 +20,12 @@
 
 	//
 	//	The default is to download asynchronously, 
-	// 	so we need to give it a callback (aka altfunc).
+	// 	so we need to give it an inline callback.
 	//
 	function loadIT(altfunc) {
         console.log("loadIt()");
         $.get(myurl, function (data) {
+			// 'obj' is the global object
             obj = data;
             console.log("dummyFunction()");
             //workSpace.html("dummyFunction()");
