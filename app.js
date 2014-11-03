@@ -33,12 +33,13 @@
         $.get(myurl, function (data) {
             console.log("dummyFunction()");
             workSpace.html("dummyFunction()");
-            obj = eval ("(" + data + ")");
+            //obj = eval ("(" + data + ")");
             //alert(obj.length);
-            workSpace.html(obj.length + " events.   ");
+            workSpace.html(data.length + " events.   ");
             // Seemed not to work right without the hard value.
             // maybe a scoping issue.
-            window.setTimeout(dummyLoader, 400);
+            
+window.setTimeout(dummyLoader, 400);
         });
 	}
 	// This function calls the rendering function
