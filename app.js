@@ -31,15 +31,13 @@
 	function loadIT(altfunc) {
         console.log("loadIt()");
         $.get(myurl, function (data) {
+            obj = data;
             console.log("dummyFunction()");
             workSpace.html("dummyFunction()");
-            //obj = eval ("(" + data + ")");
-            //alert(obj.length);
-            workSpace.html(data.length + " events.   ");
+            workSpace.html(obj.length + " events.   ");
             // Seemed not to work right without the hard value.
             // maybe a scoping issue.
-            
-window.setTimeout(dummyLoader, 400);
+            window.setTimeout(dummyLoader, 400);
         });
 	}
 	// This function calls the rendering function
