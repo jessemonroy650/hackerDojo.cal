@@ -4,7 +4,7 @@
 		var htmlItem = document.getElementById('workspace2');
                 valueId = 'itemIdName_' + formItemIndex;
                 //xxx = valueId + ":" + value; 
-		divNode2(htmlItem, valueId, label, css_class1, value, css_class2);
+		divNode2(calenderSpace, valueId, label, css_class1, value, css_class2);
 		//htmlItem.appendChild(document.createElement('br'));
 		formItemIndex++;
 	}
@@ -13,7 +13,7 @@
 		var htmlItem = document.getElementById('workspace2');
                 valueId = 'itemIdName_' + formItemIndex;
                 //xxx = valueId + ":" + value; 
-		divNode3(htmlItem, valueId, label, css_class3, value, css_class4);
+		divNode3(calenderSpace, valueId, label, css_class3, value, css_class4);
 		// HERE Experimenting HERE
 		//divNodeNew(htmlItem, valueId, label, css_class3, value, css_class4);
 		//htmlItem.appendChild(document.createElement('br'));
@@ -21,7 +21,7 @@
 	}
 	function addASpacer() {
 		var htmlItem = document.getElementById('workspace2');
-		htmlItem.appendChild(document.createElement('p'));
+		calenderSpace.appendChild(document.createElement('p'));
 	}
 
 	//
@@ -35,8 +35,7 @@
             console.log("dummyFunction()");
             //workSpace.html("dummyFunction()");
             workSpace.html(obj.length + " events.   ");
-            // Seemed not to work right without the hard value.
-            // maybe a scoping issue.
+            // Previously, had to settle for some unknown reason.
             //window.setTimeout(dummyLoader, 400);
             dummyLoader()
         });
