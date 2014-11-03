@@ -35,15 +35,6 @@ var ISOolderThanToday = function(dateGiven) {
     ttime  = todayThing.setHours(offset);
     tdateThing = new Date(tdate.toISOString().split("T",1));
 
-    gtime = tdateThing.getTime();
-    /*
-    debugSpace = document.getElementById("debugspace");
-    debugSpace.innerHTML = offset + "<p>todayThing:" + todayThing +
-					"<p>ttime:" + ttime + 
-					"<p>tdateThing:" + tdateThing + 
-					"<p>gtime:" + gtime;
-    */
-
     bResults = (todayThing <= tdateThing);
     return bResults;
 }

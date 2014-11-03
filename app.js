@@ -1,22 +1,14 @@
 
 	function addMoreFriends(label,value) {
-		// Get the closest HTML 
 		var htmlItem = document.getElementById('workspace2');
-                valueId = 'itemIdName_' + formItemIndex;
-                //xxx = valueId + ":" + value; 
+        valueId = 'itemIdName_' + formItemIndex;
 		divNode2(htmlItem, valueId, label, css_class1, value, css_class2);
-		//htmlItem.appendChild(document.createElement('br'));
 		formItemIndex++;
 	}
 	function addAFriend(label,value) {
-		// Get the closest HTML 
 		var htmlItem = document.getElementById('workspace2');
-                valueId = 'itemIdName_' + formItemIndex;
-                //xxx = valueId + ":" + value; 
-		divNode3(calenderSpace, valueId, label, css_class3, value, css_class4);
-		// HERE Experimenting HERE
-		//divNodeNew(htmlItem, valueId, label, css_class3, value, css_class4);
-		//htmlItem.appendChild(document.createElement('br'));
+        valueId = 'itemIdName_' + formItemIndex;
+		divNode3(htmlItem, valueId, label, css_class3, value, css_class4);
 		formItemIndex++;
 	}
 	function addASpacer() {
