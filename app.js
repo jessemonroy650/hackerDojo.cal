@@ -59,14 +59,14 @@
 				//if (eDate >= myDate.yesterday) {
 				someDate = ary[index].start_time.split("T", 1);
                 //dateObj  = new Date(someDate);
-                if ( ISOolderThanToday(someDate)) {
+                //if ( ISOolderThanToday(someDate)) {
 					//addMoreFriends(ary[index].label, ary[index].value)
 					addMoreFriends('Event', ary[index].name);
 					addAFriend('Starts', ary[index].start_time);
 					addAFriend('Room', ary[index].rooms[0]);
 					//addASpacer();
 					k++;
-				}
+				//}
 			}
 		}
 		postFunction(k)

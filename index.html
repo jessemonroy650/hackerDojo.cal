@@ -30,13 +30,12 @@
 		']}';
   	var obj = {}; //= eval ("(" + stuff + ")"); 
 
-	myurl = encodeURI("http://www.contractorsthriftstore.com/test/events.json");
 	myurl = encodeURI("http://events.hackerdojo.com/events.json");
 
 	function initApp() {
 		// Grab the object handles for our rendering/drawing spaces
 		workSpace     = $("#workspace");
-		calenderSpace = document.getElementById("workspace2");
+		//calenderSpace = document.getElementById("workspace2");
 		// delay fetching our data
 		window.setTimeout(delayLoading, preloadDelayTime);
 		workSpace.text("0 events.");
