@@ -44,6 +44,7 @@ float:left;
 .valuer {width:100%;
 color:black;
 padding:0.2em;
+padding-left:1em;
 border:solid 1px black;
 background:white;
 text-align:left;
