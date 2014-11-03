@@ -15,14 +15,17 @@ background:#f5deb3;
 border:solid 0.1em black;
 background:#fafad2;text-align:left;
 font-weight: bold;
+-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
 }
 
 .labell {width:25%;color:black;padding:5px;background:#e0eee0;
 float:left;
+-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
 }
 .valuer {width:100%;color:black;padding:5px;
 border:solid 1px black;
 background:white;text-align:left;
+-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
 }
 
 .statusMessage {width:100%;color:black;padding:0.2em;

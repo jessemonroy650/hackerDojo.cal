@@ -33,7 +33,7 @@
         $.get(myurl, function (data) {
             obj = data;
             console.log("dummyFunction()");
-            workSpace.html("dummyFunction()");
+            //workSpace.html("dummyFunction()");
             workSpace.html(obj.length + " events.   ");
             // Seemed not to work right without the hard value.
             // maybe a scoping issue.
@@ -73,7 +73,7 @@
 	}
 	// destroy our button to load our data.
 	var postRender = function(i) {
-		document.getElementById("loadButton").innerHTML = i + " loaded.";
+		$("#loadButton").html(i + " loaded.");
 	}
 	//
 	// The delay in loading is to allow the screen to draw, then fetch the JSON
