@@ -32,6 +32,7 @@
         console.log("loadIt()");
         $.get(myurl, function (data) {
             console.log("dummyFunction()");
+            workSpace.html("dummyFunction()");
             obj = eval ("(" + data + ")");
             //alert(obj.length);
             $("workspace").text(obj.length + " events.   ");
