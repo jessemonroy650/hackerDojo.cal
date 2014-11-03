@@ -35,7 +35,7 @@
             workSpace.html("dummyFunction()");
             obj = eval ("(" + data + ")");
             //alert(obj.length);
-            $("workspace").text(obj.length + " events.   ");
+            $("#workspace").text(obj.length + " events.   ");
             // Seemed not to work right without the hard value.
             // maybe a scoping issue.
             window.setTimeout(dummyLoader, 400);
