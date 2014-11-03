@@ -37,10 +37,11 @@
             workSpace.html(obj.length + " events.   ");
             // Seemed not to work right without the hard value.
             // maybe a scoping issue.
-            window.setTimeout(dummyLoader, 400);
+            //window.setTimeout(dummyLoader, 400);
+            dummyLoader()
         });
 	}
-	// This function calls the rendering function
+	// This function calls the rendering function.
 	function dummyLoader() {
         console.log("dummyLoader()");
 		loadJSON(obj, formItemIndex, postRender);
@@ -54,19 +55,13 @@
 		for(var i=0; i <= ary.length; i++) {
 			index = i;
 			if (index < ary.length) {
-				//
-				//eDate = new Date(ary[index].start_time);
-				//if (eDate >= myDate.yesterday) {
 				someDate = ary[index].start_time.split("T", 1);
-                //dateObj  = new Date(someDate);
-                //if ( ISOolderThanToday(someDate)) {
-					//addMoreFriends(ary[index].label, ary[index].value)
+                if ( ISOolderThanToday(someDate)) {
 					addMoreFriends('Event', ary[index].name);
 					addAFriend('Starts', ary[index].start_time);
 					addAFriend('Room', ary[index].rooms[0]);
-					//addASpacer();
 					k++;
-				//}
+				}
 			}
 		}
 		postFunction(k)
