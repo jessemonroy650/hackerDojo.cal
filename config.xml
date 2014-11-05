@@ -26,6 +26,8 @@
         <icon src="drawable-hdpi/icon.png" gap:platform="android" gap:qualifier="hdpi" />
         <icon src="drawable-xhdpi/icon.png" gap:platform="android" gap:qualifier="xhdpi" />
 
+        <preference name="permissions" value="none"/>
+
         <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.3" />
         <gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />
     </widget>
