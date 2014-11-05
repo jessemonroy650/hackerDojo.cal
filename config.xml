@@ -19,8 +19,13 @@
         <author href="http://bsdmasterindex.com" email="jessemonroy650@yahoo.com">
         Jesse Monroy
         </author>
-        <icon src="icon.png" />
         <gap:platform name="android" />
+
+        <icon src="drawable-ldpi/icon.png" gap:platform="android" gap:qualifier="ldpi" />
+        <icon src="drawable-mdpi/icon.png" gap:platform="android" gap:qualifier="mdpi" />
+        <icon src="drawable-hdpi/icon.png" gap:platform="android" gap:qualifier="hdpi" />
+        <icon src="drawable-xhdpi/icon.png" gap:platform="android" gap:qualifier="xhdpi" />
+
         <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.3" />
         <gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />
     </widget>
