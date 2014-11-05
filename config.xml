@@ -3,7 +3,7 @@
 
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.bsdmasterindex.hackerDojo.cal"
-        version     = "0.9"
+        version     = "1.1"
         versionCode = "10" >
 
         <!-- versionCode is optional and Android only -->
@@ -29,5 +29,4 @@
         <preference name="permissions" value="none"/>
 
         <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.3" />
-        <gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />
     </widget>
