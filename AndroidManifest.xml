@@ -18,8 +18,9 @@
        under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:windowSoftInputMode="adjustPan"
-      package="com.bsdmasterindex.hackerDojo.cal" android:versionName="1.0" android:versionCode="1" >
+      package="com.bsdmasterindex.hackerDojocal" android:versionName="1.0" android:versionCode="1" >
     <supports-screens
+        android:xlargeScreens="true"
         android:largeScreens="true"
         android:normalScreens="true"
         android:smallScreens="true"
@@ -31,7 +32,7 @@
     <application android:icon="@drawable/icon" android:label="@string/app_name"
         
         android:debuggable="false">
-        <activity android:name="hackerDojo.cal" android:label="@string/app_name"
+        <activity android:name="Dojo Cal" android:label="@string/app_name"
                 android:theme="@android:style/Theme.Black.NoTitleBar"
                 android:configChanges="orientation|locale">
             <intent-filter>
@@ -41,5 +42,5 @@
         </activity>
     </application>
 
-    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="18"/>
+    <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="18"/>
 </manifest> 

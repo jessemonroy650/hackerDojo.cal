@@ -20,6 +20,7 @@
         Jesse Monroy
         </author>
         <gap:platform name="android" />
+        <gap:platform name="ios" />
 
         <icon src="drawable-ldpi/icon.png" gap:platform="android" gap:qualifier="ldpi" />
         <icon src="drawable-mdpi/icon.png" gap:platform="android" gap:qualifier="mdpi" />
